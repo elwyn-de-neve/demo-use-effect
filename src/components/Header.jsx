@@ -8,13 +8,28 @@ function Header() {
                 <NavLink to="/" className={({ isActive }) =>
                     isActive ? 'nav-link active' : 'nav-link'
                 } end>
-                    📌 Mounting Demo
+                    📌 Mounting
                 </NavLink>
-                <NavLink to="/crud" className={({ isActive }) =>
+                <NavLink to="/update" className={({ isActive }) =>
                     isActive ? 'nav-link active' : 'nav-link'
                 }>
-                    🔄 CRUD Operaties
+                    🔄 Update
                 </NavLink>
+                <NavLink to="/unmount" className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                }>
+                    🧹 Unmount
+                </NavLink>
+                <NavLink to="/fetch" className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                }>
+                    📡 API Requests
+                </NavLink>
+                {/* <NavLink to="/crud" className={({ isActive }) =>
+                    isActive ? 'nav-link active' : 'nav-link'
+                }>
+                    🔄 CRUD
+                </NavLink> */}
             </nav>
         </header>
     );
